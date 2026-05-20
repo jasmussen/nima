@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Public Sans', sans-serif;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  cursor: pointer;
+  user-select: none;
+}
+
+#canvas-bg, #canvas-img, #canvas-mid, #canvas-fg {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+#canvas-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#canvas-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#canvas-mid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#world {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  pointer-events: none;
+}
+
+#canvas-fg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.node {
+  position: relative;
+  pointer-events: none;
+}
+
+.node-dot {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--fg);
+}
+
+.node-text::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.node-text {
+  position: absolute;
+  left: 20px;
+  top: -8px;
+  text-wrap: pretty;
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 400px;
+  pointer-events: auto;
+  user-select: text;
+  cursor: text;
+  color: var(--fg);
+}
+
+#rewind {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 12px 24px;
+  border: none;
+  background: var(--fg);
+  color: var(--bg);
+  cursor: pointer;
+  pointer-events: auto;
+  display: none;
+  -webkit-font-smoothing: none;
+}

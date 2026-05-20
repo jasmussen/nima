@@ -1,0 +1,30 @@
+{
+  "colors": ["#000000", "#bbbbbb", "#cc0000"],
+  "nodes": [
+    { "text": "This is a demo" },
+    { "text": "of interactive web technology" },
+    { "text": "presented as is" },
+    { "text": "in twenty-five lines of text" },
+    { "text": "A click adds a node" },
+    { "text": "nodes connect a thread" },
+    { "text": "synthetic musical notes play" },
+    { "text": "it's just a looping composition" },
+    { "text": "There's some depth" },
+    { "text": "additional nodes in layers" },
+    { "text": "dithered with blue noise" },
+    { "text": "as many as can render at speed" },
+    { "text": "It's a webpage" },
+    { "text": "static and responsive" },
+    { "text": "embedded or standalone" },
+    { "text": "a header or a backdrop" },
+    { "text": "It's an interaction" },
+    { "text": "brief and repeatable" },
+    { "text": "ambient or absorbing" },
+    { "text": "a landing page or a showcase" },
+    { "text": "Mostly an art project" },
+    { "text": "and a technical demonstration" },
+    { "text": "it's noise, sounds, and motion" },
+    { "text": "available to any browser" },
+    { "text": "Go again?" }
+  ]
+}
