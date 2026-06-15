@@ -734,7 +734,7 @@
     if (rewindBtn) return;
     rewindBtn = document.createElement('button');
     rewindBtn.id = 'rewind';
-    rewindBtn.textContent = 'Rewind';
+    rewindBtn.textContent = 'Be kind, rewind';
     document.body.appendChild(rewindBtn);
     rewindBtn.style.display = 'block';
     rewindBtn.addEventListener('click', doRewind);
